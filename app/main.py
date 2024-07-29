@@ -3,7 +3,7 @@ import sys
 sys.path.append(os.getcwd())
 sys.path.append('./')
 from fastapi import FastAPI
-from E2EDNA_API.app.config.logging_config import setup_logging
+from config.logging_config import setup_logging
 from api import dock, update
 
 # Initialize FastAPI app
