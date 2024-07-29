@@ -4,7 +4,7 @@ sys.path.append(os.getcwd())
 sys.path.append('./')
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
-from E2EDNA_API.app.models.dock import Dock
+from ..models.dock import Dock
 import logging
 import subprocess
 

@@ -3,9 +3,9 @@ import sys
 sys.path.append(os.getcwd())
 sys.path.append('./')
 from fastapi import APIRouter, HTTPException
-from E2EDNA_API.app.models.update import Update
+from ..models.update import Update
 import logging
-from E2EDNA_API.app.config.yaml import read_yaml, write_yaml
+from ..config.yaml import read_yaml, write_yaml
 
 router = APIRouter()
 logger = logging.getLogger(__name__)

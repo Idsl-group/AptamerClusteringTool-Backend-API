@@ -5,7 +5,7 @@ sys.path.append('./')
 
 from fastapi import FastAPI
 from .config.logging_config import setup_logging
-from api import dock, update
+from .api import dock, update
 
 # Initialize FastAPI app
 app = FastAPI()
