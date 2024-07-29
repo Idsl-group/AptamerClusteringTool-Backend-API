@@ -14,8 +14,8 @@ app = FastAPI()
 setup_logging()
 
 # Include the routers
-app.include_router(dock.router, prefix="/items", tags=["items"])
-app.include_router(update.router, prefix="/users", tags=["users"])
+app.include_router(dock.router, prefix="/dock", tags=["dock"])
+app.include_router(update.router, prefix="/update", tags=["update"])
 
 
 # Run the app
